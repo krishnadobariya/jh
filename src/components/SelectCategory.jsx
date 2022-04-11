@@ -42,12 +42,13 @@ const SelectCategory = () => {
               >
                 <div className="">
                   <label htmlFor="mode" className="form-label">
-                    <b>Select Ctegory :</b>
+                    <b>Select Category :</b>
                   </label>
                   <div className="form-check ps-5">
                     <input
                       type="radio"
                       className="form-check-input"
+                      name="category"
                       onChange={(e) => setCategory(e.target.value)}
                       value="webDeveloper"
                     />{" "}
@@ -58,6 +59,7 @@ const SelectCategory = () => {
                   <div className="form-check ps-5">
                     <input
                       type="radio"
+                      name="category"
                       className="form-check-input"
                       onChange={(e) => setCategory(e.target.value)}
                       value="webDesigner"
@@ -68,6 +70,7 @@ const SelectCategory = () => {
                   <div className="form-check ps-5">
                     <input
                       type="radio"
+                      name="category"
                       className="form-check-input"
                       onChange={(e) => setCategory(e.target.value)}
                       value="mobileDeveloper"
@@ -78,6 +81,7 @@ const SelectCategory = () => {
                   <div className="form-check ps-5">
                     <input
                       type="radio"
+                      name="category"
                       className="form-check-input"
                       onChange={(e) => setCategory(e.target.value)}
                       value="softwareDeveloper"
@@ -88,6 +92,7 @@ const SelectCategory = () => {
                   <div className="form-check ps-5">
                     <input
                       type="radio"
+                      name="category"
                       className="form-check-input"
                       onChange={(e) => setCategory(e.target.value)}
                       value="uiuxDesigner"
@@ -98,6 +103,7 @@ const SelectCategory = () => {
                   <div className="form-check ps-5">
                     <input
                       type="radio"
+                      name="category"
                       className="form-check-input"
                       onChange={(e) => setCategory(e.target.value)}
                       value="DataAnalyst"
@@ -108,6 +114,7 @@ const SelectCategory = () => {
                   <div className="form-check ps-5">
                     <input
                       type="radio"
+                      name="category"
                       className="form-check-input"
                       onChange={(e) => setCategory(e.target.value)}
                       value="DatabaseAdministrator"
@@ -118,6 +125,7 @@ const SelectCategory = () => {
                   <div className="form-check ps-5">
                     <input
                       type="radio"
+                      name="category"
                       className="form-check-input"
                       onChange={(e) => setCategory(e.target.value)}
                       value="blockchainDeveloper"

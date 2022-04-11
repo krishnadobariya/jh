@@ -7,8 +7,16 @@ import helparrow from "../images/helparrow.svg";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import axios from "axios";
+import { ToastContainer
+  ,toast } from "react-toastify"; 
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Help = () => {
+  const notify =()=> toast.info("Thank you for giving the feedback",{
+    position:toast.POSITION.TOP_CENTER,
+    autoClose:3000
+    
+  })
   const companyname = localStorage.getItem("companyname");
   const firstname = localStorage.getItem("firstname");
   const rid = localStorage.getItem("rid");
@@ -34,17 +42,20 @@ const Help = () => {
 
   const feedback = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:8070/feedback/give", feed).then(
-      (res) => {console.log(res.data)},
+    // notify()
+    axios.post("http://localhos:8070/feedback/give", feed).then(
+      (res) => 
       setFeedback({
         feedback:""
-      })
+      }),
+      notify()
     ).catch((err) => {
       console.log(err);
     })
   }
   return (
     <>
+    <ToastContainer/>
       <Helmet>
         <title>Help-JustHire</title>
       </Helmet>

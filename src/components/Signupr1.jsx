@@ -3,8 +3,15 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../css/signupr.css";
 import { NavLink } from "react-router-dom";
+import { ToastContainer
+  ,toast } from "react-toastify"; 
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Signupr = () => {
+  const notify =()=> toast.success("Signup Successfully.....",{
+    position:toast.POSITION.TOP_CENTER,
+    
+  })
   //   const [email,setemail] = useState("");
   //   const [c1,correctpsd]= useState(false);
   // function setpsd(e){
@@ -88,7 +95,10 @@ const Signupr = () => {
         .then(
           (res) => {
             if (res.data.status === 201) {
-              window.location.href = "/login";
+              setTimeout(()=>{
+                window.location.href = "/login";
+  
+              },3000)
               localStorage.setItem("companyname", user.companyname);
               localStorage.setItem("rid", res.data.data._id);
             }
@@ -114,6 +124,7 @@ const Signupr = () => {
   console.log(user);
   return (
     <>
+    <ToastContainer/>
       <div className="sign-r">
         <div className="container nav-margin-top back">
           <h1 className="text-center py-md-5 py-3" style={{ color: "#fff" }}>

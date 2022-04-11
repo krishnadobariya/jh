@@ -6,8 +6,18 @@ import "../css/contact.css";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
 import axios from "axios";
-
+import { ToastContainer
+  ,toast } from "react-toastify"; 
+  import 'react-toastify/dist/ReactToastify.css';
 const Contact = () => {
+  const notify =()=> toast.success("Submit Successfully.....",{
+    position:toast.POSITION.TOP_CENTER,
+    autoClose:3000
+  })
+  const notifye =()=> toast.success("Something went wrong.....",{
+    position:toast.POSITION.TOP_CENTER,
+    autoClose:3000
+  })
     const [contact, setContact] = useState({
       fullname:"",
       email:"",
@@ -27,23 +37,23 @@ const Contact = () => {
       const contac = e => {
         e.preventDefault();
           axios.post("http://localhost:8070/contact/saved", contact).then(
-            (res) => {
-
-              console.log(res.data);
+            (res) => 
               setContact({
                 fullname:"",
                 email:"",
                 message:""
-              })
-            })
+              }),
+              notify()
+            )
             .catch((err) => {
               if (err) {
-                window.alert("Somthing Went Worng")
+               notifye()
               }
             })
         }
   return (
     <>
+    <ToastContainer/>
       <Helmet>
         <title>Contact-JustHire</title>
       </Helmet>

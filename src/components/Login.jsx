@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import { ToastContainer
+,toast } from "react-toastify"; 
+import 'react-toastify/dist/ReactToastify.css';
 import { NavLink } from "react-router-dom";
 import "../css/login.css";
 import { Helmet } from "react-helmet";
@@ -9,6 +12,18 @@ import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
 const Login = () => {
+  const notify =()=> toast.success("Logging Successfully.....",{
+    position:toast.POSITION.TOP_CENTER,
+    
+  })
+  const notifye =()=> toast.error("Something went wrong.....",{
+    position:toast.POSITION.TOP_CENTER,
+    
+  })
+  const notifyu =()=> toast.info("please enter the username.....",{
+    position:toast.POSITION.TOP_CENTER,
+    
+  })
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -32,23 +47,28 @@ const Login = () => {
           console.log(res.data);
           cookies.set("jwt", res.data.token, { path: "/" });
           if (res.data.status === 200) {
-            window.location.href = "/recruiter";
+            notify()
+            setTimeout(()=>{
+              window.location.href = "/recruiter";
+
+            },3000)
           }
         })
         .catch((err) => {
           if (err) {
-            window.alert("Somthing Went Worng");
+         notifye()
             console.log(err);
           }
         });
     } else {
-      alert("please enter the username");
+     notifyu()
     }
     localStorage.setItem("user_info", user);
   };
   console.log(user);
   return (
     <>
+    <ToastContainer/>
       <Helmet>
         <title>Login-JustHire</title>
       </Helmet>

@@ -17,38 +17,47 @@ const Findjobcat = () => {
 
   const { state, dispatch } = useContext(userContext);
 dispatch({ type: "USER", payload: false });
+
   const careercard = [
     {
       src: card11,
       heading: "Web Development",
+         subheading:"webDeveloper"   
     },
     {
       src: card21,
       heading: "Web Designing",
+      subheading:"webDesigner"
     },
     {
       src: card31,
       heading: "App Development",
+      subheading:"mobileDeveloper"
     },
     {
       src: card41,
       heading: "Software Development",
+      subheading:"softwareDeveloper"
     },
     {
       src: card51,
       heading: "UI-UX designing",
+      subheading:"uiuxDesigner"
     },
     {
       src: card61,
       heading: "Data Analyst",
+      subheading:"DataAnalyst"
     },
     {
       src: card71,
       heading: "Database Administrator",
+      subheading:"DatabaseAdministrator"
     },
     {
       src: card81,
       heading: "Blockchain Development",
+         subheading:"blockchainDeveloper"   
     },
   ];
   return (
@@ -65,7 +74,7 @@ dispatch({ type: "USER", payload: false });
             {careercard.map((careercard, index) => (
               <div className="col-md-4">
                 <div className="card">
-                  <Link to={`/findjob/${careercard.heading}`}>
+                  <Link to={`/findjob/${careercard.subheading}`}>
                     <div className="img-part">
                       <img src={careercard.src} />
                     </div>

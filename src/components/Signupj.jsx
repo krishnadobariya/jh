@@ -3,7 +3,14 @@ import "../css/signupj.css";
 import { NavLink } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 import axios from "axios";
+import { ToastContainer
+  ,toast } from "react-toastify"; 
+  import 'react-toastify/dist/ReactToastify.css';
 const Signupj = () => {
+  const notify =()=> toast.success("Signup Successfully.....",{
+    position:toast.POSITION.TOP_CENTER,
+    
+  })
   // const [email,setemail] = useState("");
   // const [c1,correctpsd]= useState(false);
   // function setpsd(e){
@@ -110,7 +117,10 @@ const Signupj = () => {
       console.log(formData);
       axios.post("http://localhost:8070/auth/signup/jobseeker", formData).then(
         (response) => {  
-          window.location.href = "/loginj"
+          setTimeout(()=>{
+            window.location.href = "/loginj";
+
+          },3000)
           localStorage.setItem("id", response.data.data._id) 
           localStorage.setItem("firstname", firstname);
         }
@@ -127,6 +137,7 @@ const Signupj = () => {
   }
   return (
     <>
+    <ToastContainer/>
       <Helmet>
         <title>Signup Jobseeker-JustHire</title>
       </Helmet>

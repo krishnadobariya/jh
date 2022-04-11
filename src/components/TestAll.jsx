@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useEffect, useState , useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { userContext } from "../App";
@@ -24,11 +23,6 @@ dispatch({ type: "USER", payload: false });
     getCategory();
   }, []);
 
-  const removeOldData = () => {
-    const categor = localStorage.getItem("categor");
-    const id = localStorage.getItem("id");
-    axios.get(`http://localhost:8070/test/removeOldValue?id=${id}&categorynew=${categor}`).then((res) => console.log("ressss" , res))
-  }
   return (
     <>
       <div>
@@ -52,12 +46,8 @@ dispatch({ type: "USER", payload: false });
                         to={`/${curele.categoriesname}`}
                           >
                             <button
-                           
                               class="btn pt-2 pb-2 px-5 p-1"
-                             onClick={()=> {
-                               localStorage.setItem("categor" , curele.categoriesname) ; 
-                               removeOldData();
-                             }}
+                             
                               style={{
                                 backgroundColor: "#003b46",
                                 color: "#fff",

@@ -1,8 +1,19 @@
 import axios from "axios";
 import { React, useState, useEffect , useContext} from "react";
 import { NavLink } from "react-router-dom";
+import { ToastContainer
+  ,toast } from "react-toastify"; 
+  import 'react-toastify/dist/ReactToastify.css';
 import { userContext } from "../App";
 export const Postjob = () => {
+  const notify =()=> toast.success("Post job Successfully.....",{
+    position:toast.POSITION.TOP_CENTER,
+    
+  })
+  const notifye =()=> toast.error("Something went wrong.....",{
+    position:toast.POSITION.TOP_CENTER,
+    
+  })
 const [postdata,setPostdata]= useState({
 "company_name":"",
 "position":"",
@@ -27,8 +38,11 @@ const handleData=(e)=>{
   .post("http://localhost:8070/postjob", postdata)
   .then((res) => {
     console.log(res.data);
-    window.alert("Job Post Successfully");
-    window.location.href = "./recruiter"
+ notify()
+ setTimeout(()=>{
+  window.location.href = "/recruiter";
+
+},3000)
     setPostdata({
       "company_name":"",
       "position":"",
@@ -40,7 +54,7 @@ const handleData=(e)=>{
   })
   .catch((err) => {
     if (err) {
-      window.alert("Somthing Went Worng");
+    notifye()
       console.log(err);
     }
   });e.preventDefault()
@@ -51,7 +65,6 @@ const [category, setCategory] = useState([]);
   const getCategory = async () => {
     const response = await fetch("http://localhost:8070/category/view");
     const data = await response.json();
-    console.log(data);
     const alldata = data.data;
     setCategory(alldata);
   };
@@ -64,6 +77,7 @@ const [category, setCategory] = useState([]);
   return (
     <>
     {console.log(postdata)}
+    <ToastContainer/>
       <div className="grad nav-margin-top ">
         <div className=" ">
           <div className="container">
@@ -101,7 +115,7 @@ const [category, setCategory] = useState([]);
                             value={curele.categoriesname}
                             name="position"
                           >
-                            {curele.categoriesname}{" "}
+                            {curele.subtitle}{" "}
                           </option>
                         );
                       })}

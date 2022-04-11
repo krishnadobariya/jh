@@ -52,8 +52,8 @@ const Routing = () => {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/recruiter" element={cookie ? <Recruiter /> : <Login />} />
-        <Route exact path="/jobseeker" element={cookie ? <Jobseeker /> : <Login />} />
+        <Route exact path="/recruiter" element={ <Recruiter />} />
+        <Route exact path="/jobseeker" element={ <Jobseeker />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/help" element={<Help />} />
         <Route exact path="/contact" element={<Contact />} />

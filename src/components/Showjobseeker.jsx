@@ -3,7 +3,14 @@ import "../css/showjobseeker.css";
 import axios from "axios";
 import { userContext } from "../App";
 import { NavLink } from "react-router-dom";
+import { ToastContainer
+  ,toast } from "react-toastify"; 
+  import 'react-toastify/dist/ReactToastify.css';
 function Showjobseeker() {
+  const notify =()=> toast.success("Email send successfully.....",{
+    position:toast.POSITION.TOP_CENTER,
+    autoClose:3000
+  })
   const [show, setShow] = useState(false);
   const [catregorys, setCtegorys] = useState([]);
   const [cat, setCat] = useState([]);
@@ -48,16 +55,19 @@ function Showjobseeker() {
 
   console.log("dddsvd",email);
   const SendEmail = (e) => {
+   e.preventDefault()
     axios.get(
       `http://localhost:8070/auth/sendemail?email=${email}`
     )
-    .then((res) => {
-      console.log(res);
-    })
+    .then((res) => 
+    console.log("email"),
+    notify()
+    )
   }
 
   return (
     <>
+    <ToastContainer/>
       <div className="about-section3 ">
         <div className="col-lg-6 col-11 mx-auto">
           <h1 className="text-center py-md-5 py-3 heading">
@@ -106,6 +116,8 @@ function Showjobseeker() {
                           <span>Mobile: </span>
                           {curele.mobile}
                         </p>
+                      </div>
+                      <div className="col-6 my-auto">
                         <p>
                           <span>Mode: </span>
                           {curele.mode}
@@ -115,39 +127,8 @@ function Showjobseeker() {
                           {curele.position}
                         </p>
                         <p>
-                          <span>Previously Worked Us?: </span>
-                          {curele.work}
-                        </p>
-                      </div>
-                      <div className="col-6 my-auto">
-                      <p>
-                          <span>web Devloper: </span>
-                          {curele.webDeveloper}
-                        </p>
-                        <p>
-                          <span>web Designer: </span>
-                          {curele.webDesigner}
-                        </p>
-                        <p>
-                          <span>Mobile Developer: </span>
-                          {curele.mobileDeveloper}
-                        </p>
-                        <p>
-                          <span>Software Developer: </span>
-                          {curele.softwareDeveloper}
-                        </p>
-                        <p>
-                          <span>Data Analyst: </span>
-                          {curele.DataAnalyst}
-                        </p>  <p>
-                          <span>Database Administrator: </span>
-                          {curele.DatabaseAdministrator}
-                        </p>  <p>
-                          <span>blockchainDeveloper: </span>
-                          {curele.blockchainDeveloper}
-                        </p>  <p>
-                          <span>ui/ux Designer: </span>
-                          {curele.uiuxDesigner}
+                          <span>Result: </span>
+                          {curele.result}
                         </p>
                         <p>
                           <span>Previously Worked Us?: </span>
@@ -155,7 +136,6 @@ function Showjobseeker() {
                         </p>
                       </div>
                       <div className="row">
-                        {console.log("file resume", curele.file)}
                         <div className="col-6">
                           <a
                             href={curele.file}
@@ -223,6 +203,8 @@ function Showjobseeker() {
                           <span>Mobile: </span>
                           {curele.mobile}
                         </p>
+                      </div>
+                      <div className="col-6 my-auto">
                         <p>
                           <span>Mode: </span>
                           {curele.mode}
@@ -232,41 +214,13 @@ function Showjobseeker() {
                           {curele.position}
                         </p>
                         <p>
+                          <span>Result: </span>
+                          {curele.result}
+                        </p>
+                        <p>
                           <span>Previously Worked Us?: </span>
                           {curele.work}
                         </p>
-                      </div>
-                      <div className="col-6 my-auto">
-                      <p>
-                          <span>web Devloper: </span>
-                          {curele.webDeveloper}
-                        </p>
-                        <p>
-                          <span>web Designer: </span>
-                          {curele.webDesigner}
-                        </p>
-                        <p>
-                          <span>Mobile Developer: </span>
-                          {curele.mobileDeveloper}
-                        </p>
-                        <p>
-                          <span>Software Developer: </span>
-                          {curele.softwareDeveloper}
-                        </p>
-                        <p>
-                          <span>Data Analyst: </span>
-                          {curele.DataAnalyst}
-                        </p>  <p>
-                          <span>Database Administrator: </span>
-                          {curele.DatabaseAdministrator}
-                        </p>  <p>
-                          <span>blockchainDeveloper: </span>
-                          {curele.blockchainDeveloper}
-                        </p>  <p>
-                          <span>ui/ux Designer: </span>
-                          {curele.uiuxDesigner}
-                        </p>
-                       
                       </div>
                       <div className="row">
                         <div className="col-6">
