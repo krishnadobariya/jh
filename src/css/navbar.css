@@ -1,0 +1,135 @@
+
+.nav1{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    border-bottom: 1px solid lightgray;
+}
+.nav2{
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    margin-top: 20px;
+
+}
+.bcknav{
+    background-color: rgb(196 223  230 / 85%) ;
+    border: 1px solid #003b46;
+    padding: 0px 20px;
+    border-radius: 50px;
+}
+
+.collapse1{
+    display: block;
+}
+.collapse-no{
+  display: none; 
+}
+.logo-img{
+    width: 8%;
+}
+.logo{
+    color: #c4dfe6;
+   font-style: bold;
+   font-size: 30px;
+}
+.h2{
+    color: #003b46;
+    list-style: none;
+}
+.jh{
+    color: #003b46;
+    font-size: 60px;
+}
+.menu-link{
+    align-self: center;
+    padding-top: 13px;
+}
+
+.navlink{
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 25px;
+    color: #003b46;
+}
+.btn-nav{
+    background-color: #003b46;
+    color: #fff;
+    padding: 10px 50px;
+}
+.navlink:hover{
+    color:  #07578b;
+    border-bottom: 3px solid #07578b;
+}
+.btn-nav:hover{
+    background-color: white;
+    color: #003b46;
+    border-color: #003b46;
+    transform: scale(1.05);
+}
+.loginbtn{
+    background-color: #003b46;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+.loginbtn:hover{
+    background-color: transparent;
+    color: #003b46;
+    box-shadow: rgba(5, 51, 65, 0.25) 0px 30px 60px -12px inset, rgba(3, 39, 44, 0.3) 0px 18px 36px -18px inset;
+}
+@media screen and (max-width: 1440px) {
+    .logo-img{
+        width: 11%;
+    }
+    .navlink {
+      font-size: 20px;
+    }
+  }
+@media screen and (max-width: 1024px) {
+    .logo-img{
+        width: 15%;
+    }
+    .navlink{
+        padding: 10px;
+    }
+    .btn-nav{
+        padding: 5px 20px;
+    }
+  }
+@media screen and (max-width: 768px) {
+    .logo-img{
+        width: 14%;
+    }
+    .navlink{
+        padding: 10px;
+        font-size: 20px;
+        padding-top: 0px;
+    }
+    .btn-nav{
+        margin-top: 10px;
+    }
+  }
+  @media screen and (max-width: 425px){
+    .logo-img{
+        width: 25%;
+    }
+      .navlink{
+          padding: 5px;
+      }
+      .btn-nav{
+          margin-top: 10px;
+      }
+  }
+  @media screen and (max-width: 375px){
+      .logo-img{
+          width: 28%;
+      }
+  }
+  @media screen and (max-width: 320px){
+    .logo-img{
+        width: 34%;
+    }
+}

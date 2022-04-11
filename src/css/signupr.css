@@ -1,0 +1,15 @@
+textarea.form-control {
+    height: 98px;
+    /* min-height: calc(1.5em + 0.75rem + 2px); */
+}
+
+.sign-r{
+    background-image: url("../images/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+.registerrform{
+    background-color: #fff;
+    opacity: 0.8;
+}

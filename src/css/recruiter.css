@@ -1,0 +1,260 @@
+body{
+    overflow-x: hidden;
+}
+.recruiter-sec1-btn-login{
+    color: white;
+    background-color: #003b46;
+    padding: 10px 50px;
+}
+.recruiter-sec1-btn-login:hover{
+    color: #003b46;
+    background-color: white;
+    border-color: #003b46;
+    transform: scale(1.05);
+}
+.mar-top{
+    margin-top: 96px;
+}
+
+.header1{
+    color: gray;
+    font-style: italic;
+}
+ a{
+    text-decoration: none!important;
+}
+.form{
+    font-size: 25px;
+    border-radius: 16px;
+    
+    box-shadow: rgb(0 0 0 / 12%) 0px 23px 47px 0px;
+
+}
+.job-sec4-img {
+    width: 70%;
+ }
+ .recruiter-section1-img{
+    width: 87%;
+ margin-top: 40px;
+    animation: up-down  1s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform:translateY(-10px);
+    }
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform:translateY(-10px);
+    }
+}
+.step1{
+    color: #003b46;
+}
+.step2{
+   
+    border-radius: 50%;
+    font-size: 50px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    padding-top: 10px;
+    color: #c4dfe6;
+    background-color: #082e2c;
+     box-shadow: 0 3px 6px rgba(38, 160, 190, 0.16), 3px 10px 10px rgba(8, 47, 51, 0.23);
+}
+.step4{
+  
+    border-radius: 50%;
+    font-size: 50px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    padding-top: 10px;
+    color: #c4dfe6;
+    background-color: #082e2c;
+     box-shadow: 0 3px 6px rgba(38, 160, 190, 0.16), 3px 10px 10px rgba(8, 47, 51, 0.23);
+}
+.step5{
+   
+    border-radius: 50%;
+    font-size: 50px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    padding-top: 10px;
+    color: #c4dfe6;
+    background-color: #082e2c;
+    box-shadow: 0 3px 6px rgba(38, 160, 190, 0.16), 3px 10px 10px rgba(8, 47, 51, 0.23);
+}
+.step2:hover,.step4:hover ,.step5:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+.step3{
+    color: #003b46;
+    text-align: center;
+  
+}
+.s1 {
+    width: 60%;
+    height: 300px;
+}
+    .rs3 {
+        width: 65%;
+        height: 90%;
+        border-radius: 20px;
+        box-shadow: #758b8b 0px 23px 47px 0px;
+    }
+
+.btn-get{
+    background-color: #003b46;
+    color: white;
+    padding:15px;
+
+}
+.rs33{
+    color: black;
+}
+.rs32{
+ padding-left: 60px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.btn-get:hover{
+    background-color: #c4dfe6;
+    color: white;
+    
+}
+
+.cat2{
+    height: 60px;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height:60px;
+    padding: 0 36px;
+    margin: 0 22px 24px 0;
+    white-space: nowrap;
+    
+}
+.cat2:hover{
+    color: white;
+    background-color: #003b46;
+    transition: 1s;
+    box-shadow: rgba(7, 102, 105, 0.45) 0px 25px 20px -10px;
+    transform: scale(0.8);
+    
+
+}
+.cat3{
+    background-color:#c4dfe6;
+}
+.recruiter-section6{
+    background-image: linear-gradient(rgba(13, 43, 49, 0.3), rgba(9, 40, 46, 0.3)),url("../images/hiring.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+}
+.cat4{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   
+    justify-content: center;
+}
+
+  @media screen and (max-width:1440px){
+.form{
+    font-size: 20px;
+}
+.recruiter-section1-img{
+    width: 96% ;
+    margin-top: 64px;
+}
+.head{
+    font-size: 24px;
+}
+.rs32{
+    padding-left : 100px;
+}
+.rs3{
+    width: 110%;
+}
+
+}
+
+@media screen and (max-width:1024px){
+    .recruiter-section1-img{
+        width: 96% ;
+        margin-top: 108px;
+    }
+    
+    .rs32{
+        padding-left : 50px;
+    }
+  .btn-get{
+      font-size: 16px;
+      padding: 10px;
+  }
+  .rs3{
+      width: 110;
+      height: 110%;
+  }
+    
+  .job-sec4-img{
+    width: 100%;
+ }
+}
+
+@media screen and (max-width:768px){
+    .recruiter-section1-img{
+        width: 90% ;
+        padding-left: 30px;
+       
+    }
+    .s1 {
+        width: 114%;
+        height: 76%;
+    }
+    .rs32{
+        text-align: center;
+    }
+    .rs3{
+        width: 50%;
+    }
+    .job-sec4-img {
+        width: 50% !important;
+    }
+    .rs32 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+   
+}
+@media screen and (max-width:425px){
+    .recruiter-section1-img{
+        width: 90% ;
+        padding-left: 30px;
+       margin-top: 20px;
+    }
+    .step2,.step4,.step5,.s1{
+        display: none;
+    }
+    .job-sec4-img {
+        width: 80% !important;
+    }
+    .rs3 {
+        width: 70%;
+    }
+}

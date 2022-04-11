@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footer{
+    background-color: #c4dfe6;
+    bottom: 0;
+    width: 100%;
+    
+}
+.foot-span{
+    color: #003b46!important;
+}
+h6 ,h3{
+    color: #003b46;
+}
+.fbtn:hover{
+    transform: scale(1.08);
+    border-color: black;
+}
+.footer-p{
+    color: #003b46;
+}
+.flink:hover{
+    color: #003b46;
+}
+.flink{
+    color: #003b46;
+    text-decoration: none;
+}
+.licon, .ticon, .iicon , .ficon{
+    color: #003b46;
+}
+.licon:hover{
+    color: #0e76a8;
+}
+.ticon:hover{
+    color:#1da1f2;
+}
+.ficon:hover{
+    color:#4267B2;
+}
+.iicon:hover{
+    color: #C13584 ;
+}

@@ -1,0 +1,477 @@
+.head {
+  color: black;
+}
+
+.abc {
+  position: relative;
+}
+
+.line {
+  position: relative;
+}
+
+.left-box {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border-radius: 20px;
+  /* border-top: 2px solid gray;
+  border-right: 2px solid gray; */
+}
+
+.left-box:hover {
+  transform: scale(1.01)
+}
+
+
+
+.fr {
+  width: 65%;
+}
+
+
+.border1 {
+  width: 100%;
+  height: 204px;
+  border-radius: 0px 0px 0px 10px;
+  border-bottom: 5px solid #66a5ad;
+  border-left: 5px solid #66a5ad;
+  animation: mymoveborder1 5s infinite;
+}
+
+@keyframes mymoveborder1 {
+  50% {
+    border-bottom: 5px solid #003b46;
+  }
+  50% {
+    border-left: 5px solid #003b46;
+  }
+}
+
+.border2 {
+  width: 100%;
+  height: 204px;
+  border-radius: 0px 0px 10px 0px;
+  border-bottom: 5px solid #66a5ad;
+  border-right: 5px solid #66a5ad;
+  animation: mymoveborder2 5s infinite;
+}
+
+@keyframes mymoveborder2 {
+  50% {
+    border-bottom: 5px solid #003b46;
+  }
+  50% {
+    border-right: 5px solid #003b46;
+  }
+}
+
+.circler1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #66a5ad;
+  animation: mymovecircle1 5s infinite;
+}
+
+@keyframes mymovecircle1 {
+  0% {
+    left: -10px;
+    top: -10px;
+  }
+  25% {
+    left: 0px;
+    top: 170px;
+  }
+  50% {
+    background: #003b46;
+    left: 90px;
+    top: 170px;
+  }
+  75% {
+    left: -10px;
+    top: 170px;
+  }
+  100% {
+    left: -10px;
+    top: -10px;
+  }
+}
+
+.circler2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #66a5ad;
+  animation: mymovecircle2 5s infinite;
+}
+
+@keyframes mymovecircle2 {
+  0% {
+    right: -10px;
+    top: -10px;
+  }
+  25% {
+    right: 0px;
+    top: 170px;
+  }
+  50% {
+    background: #003b46;
+    right: 90px;
+    top: 170px;
+  }
+  75% {
+    right: -10px;
+    top: 170px;
+  }
+  100% {
+    right: -10px;
+    top: -10px;
+  }
+}
+
+.fr1 {
+  width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  .left-box {
+    height: 185px;
+  }
+  .fr1 {
+    width: 90%;
+    height: 90%;
+  }
+  .circler1, .circler2 {
+    width: 30px;
+    height: 30px;
+  }
+  @keyframes mymovecircle1 {
+    0% {
+      left: -1px;
+      top: -15px;
+    }
+    25% {
+      left: 0px;
+      top: 185px;
+    }
+    50% {
+      background: #003b46;
+      left: 75px;
+      top: 185px;
+    }
+    75% {
+      left: -1px;
+      top: 185px;
+    }
+    100% {
+      left: -1px;
+      top: -15px;
+    }
+  }
+  @keyframes mymovecircle2 {
+    0% {
+      right: -1px;
+      top: -15px;
+    }
+    25% {
+      right: 0px;
+      top: 185px;
+    }
+    50% {
+      background: #003b46;
+      right: 75px;
+      top: 185px;
+    }
+    75% {
+      right: -1px;
+      top: 185px;
+    }
+    100% {
+      right: -1px;
+      top: -15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .left-box {
+    height: 150px;
+  }
+  @keyframes mymovecircle1 {
+    0% {
+      left: -1px;
+      top: -15px;
+    }
+    25% {
+      left: 0px;
+      top: 130px;
+    }
+    50% {
+      background: #003b46;
+      left: 50px;
+      top: 130px;
+    }
+    75% {
+      left: -1px;
+      top: 130px;
+    }
+    100% {
+      left: -1px;
+      top: -15px;
+    }
+  }
+  @keyframes mymovecircle2 {
+    0% {
+      right: -1px;
+      top: -15px;
+    }
+    25% {
+      right: 0px;
+      top: 130px;
+    }
+    50% {
+      background: #003b46;
+      right: 50px;
+      top: 130px;
+    }
+    75% {
+      right: -1px;
+      top: 130px;
+    }
+    100% {
+      right: -1px;
+      top: -15px;
+    }
+  }
+  .fr1 {
+    width: 100%;
+    height: 100%;
+  }
+  .border1 {
+    height: 150px;
+  }
+  .border2 {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fr1 {
+    width: 80%;
+    height: 90%;
+  }
+  @keyframes mymovecircle1 {
+    0% {
+      left: -1px;
+      top: -15px;
+    }
+    25% {
+      left: 0px;
+      top: 130px;
+    }
+    50% {
+      background: #003b46;
+      left: 78px;
+      top: 130px;
+    }
+    75% {
+      left: -1px;
+      top: 130px;
+    }
+    100% {
+      left: -1px;
+      top: -15px;
+    }
+  }
+  @keyframes mymovecircle2 {
+    0% {
+      right: -1px;
+      top: -15px;
+    }
+    25% {
+      right: 0px;
+      top: 130px;
+    }
+    50% {
+      background: #003b46;
+      right: 78px;
+      top: 130px;
+    }
+    75% {
+      right: -1px;
+      top: 130px;
+    }
+    100% {
+      right: -1px;
+      top: -15px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .fr1 {
+    width: 100%;
+    height: 90%;
+  }
+  @keyframes mymovecircle1 {
+    0% {
+      left: -1px;
+      top: -15px;
+    }
+    25% {
+      left: 0px;
+      top: 130px;
+    }
+    50% {
+      background: #003b46;
+      left: 35px;
+      top: 130px;
+    }
+    75% {
+      left: -1px;
+      top: 130px;
+    }
+    100% {
+      left: -1px;
+      top: -15px;
+    }
+  }
+  @keyframes mymovecircle2 {
+    0% {
+      right: -1px;
+      top: -15px;
+    }
+    25% {
+      right: 0px;
+      top: 130px;
+    }
+    50% {
+      background: #003b46;
+      right: 35px;
+      top: 130px;
+    }
+    75% {
+      right: -1px;
+      top: 130px;
+    }
+    100% {
+      right: -1px;
+      top: -15px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .fr1 {
+    width: 100%;
+    height: 80%;
+  }
+  .circler1, .circler2 {
+    width: 22px;
+    height: 22px;
+  }
+  @keyframes mymovecircle1 {
+    0% {
+      left: 2px;
+      top: -15px;
+    }
+    25% {
+      left: 0px;
+      top: 132px;
+    }
+    50% {
+      background: #003b46;
+      left: 32px;
+      top: 132px;
+    }
+    75% {
+      left: 2px;
+      top: 132px;
+    }
+    100% {
+      left: 2px;
+      top: -15px;
+    }
+  }
+  @keyframes mymovecircle2 {
+    0% {
+      right: 2px;
+      top: -15px;
+    }
+    25% {
+      right: 0px;
+      top: 132px;
+    }
+    50% {
+      background: #003b46;
+      right: 32px;
+      top: 132px;
+    }
+    75% {
+      right: 2px;
+      top: 132px;
+    }
+    100% {
+      right: 2px;
+      top: -15px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .fr1 {
+    width: 100%;
+    height: 70%;
+  }
+  @keyframes mymovecircle1 {
+    0% {
+      left: 2px;
+      top: -15px;
+    }
+    25% {
+      left: 0px;
+      top: 132px;
+    }
+    50% {
+      background: #003b46;
+      left: 26px;
+      top: 132px;
+    }
+    75% {
+      left: 2px;
+      top: 132px;
+    }
+    100% {
+      left: 2px;
+      top: -15px;
+    }
+  }
+  @keyframes mymovecircle2 {
+    0% {
+      right: 2px;
+      top: -15px;
+    }
+    25% {
+      right: 0px;
+      top: 132px;
+    }
+    50% {
+      background: #003b46;
+      right: 26px;
+      top: 132px;
+    }
+    75% {
+      right: 2px;
+      top: 132px;
+    }
+    100% {
+      right: 2px;
+      top: -15px;
+    }
+  }
+}

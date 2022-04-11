@@ -1,0 +1,345 @@
+
+.job-sec1-btn{
+    background-color: #003b46;
+    color: white;
+    padding: 10px 50px;
+}
+.job-sec1-btn:hover{
+    background-color: white;
+    color: #003b46;
+    border-color: #003b46;
+}
+.job-sec1-5{
+    width: 100%;
+    float:inline-end;
+}
+.job-sec3-1{
+    border-radius: 70%;
+    box-shadow: rgba(8, 85, 99, 0.56) 0px 22px 70px 4px;
+    background-color: #f2f9fa;
+}
+.job-sec3-1:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+.job-sec1-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      
+}
+
+.job-sec3-2{
+   margin-top: 20px;
+}
+.job-sec3{
+    background-color: #c4dfe6;
+}
+.job-sec4-2{
+    color: black;
+    font-size: 20px;
+}
+.job-sec4-img img{
+   width: 50px;
+}
+.job-sec4-1{
+  
+    color: #003b46;
+}
+.job-sec4-3{
+color:#003b46;
+
+}
+.carousel-status{
+    display: none;
+}
+.job-sec4{
+    
+      border-radius: 20px;
+     background-color: white;
+     box-shadow: rgb(0 0 0 / 12%) 0px 23px 47px 0px;
+    
+}
+
+.job-sec5-btn{
+    background-color: #003b46;
+    color: white;
+    padding: 10px 50px;
+}
+.job-sec5-btn:hover{
+    background-color: white;
+    color: #003b46;
+    border-color: #003b46;
+    transform: scale(1.05);
+}
+.job-sec5{
+    position: relative;
+    background-image: linear-gradient(#cff1fa,#164147);
+    padding-top: 200px;
+    padding-bottom:200px;
+    border-radius: 50% 50% 0% 0%;
+}
+.job-sec5-box{
+    color: black;
+    width: max-content;
+    box-shadow: #003b46 0px 23px 47px 0px;
+    background-color: white;
+    padding: 6px;
+}
+.job-sec5-5{
+    border-radius: 10px 10px 10px 0px;
+    position: absolute;
+    top: 105px;
+    left: 321px;
+}
+.job-sec5-4{
+    position: absolute;
+    top: 135px;
+    left: 286px;
+   transform: rotate(40deg);
+}
+.job-sec5-6{
+    position: absolute;
+  top: 300px;
+    left: 500px;
+    transform: rotate(
+277deg);
+}
+.job-sec5-7{
+    border-radius: 10px 10px 0px 10px;
+    position: absolute;
+   
+    top: 280px;
+    left: 216px;
+
+}
+.job-sec5-8{
+    position: absolute;
+    bottom: 103px;
+    left: 326px;
+    transform: rotate(
+45deg);
+}
+.job-sec5-9{
+    position: absolute;
+    border-radius: 10px 10px 10px 0px;
+    left: 365px;
+    bottom: 114px;
+}
+.job-sec5-10{
+    position: absolute;
+    bottom: 105px;
+    right: 268px;
+    transform: rotate(
+264deg);
+}
+.job-sec5-11{
+    position: absolute;
+   
+    right: 309px;
+    bottom: 113px;
+    border-radius: 10px 10px 0px 10px;
+}
+.job-sec5-12{
+    position: absolute;
+    right: 430px;
+    bottom: 271px;
+    transform: rotate(
+45deg);
+}
+.job-sec5-13{
+    position: absolute;
+    right: 167px;
+    top: 340px;
+    border-radius: 10px 10px 10px 0px;
+}
+.job-sec5-14{
+    position: absolute;
+    top: 145px;
+    right: 179px;
+    transform: rotate(
+266deg);
+}
+.job-sec5-15{
+    position: absolute;
+    top: 123px;
+    right: 218px;
+    border-radius: 10px 10px 0px 10px;
+   
+}
+
+.job-sec5-img{
+    width: 40px;
+}
+.job-sec6-3{
+    width: 80%;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: rgba(6, 73, 82, 0.17) 0px -23px 25px 0px inset, rgba(6, 52, 63, 0.15) 0px -36px 30px 0px inset, rgba(5, 71, 71, 0.1) 0px -79px 40px 0px inset, rgba(4, 72, 75, 0.06) 0px 2px 1px, rgba(6, 54, 50, 0.09) 0px 4px 2px, rgba(12, 68, 68, 0.09) 0px 8px 4px, rgba(8, 60, 66, 0.09) 0px 16px 8px, rgba(11, 61, 65, 0.09) 0px 32px 16px;
+}
+
+.job-sec6-6-btn{
+    padding: 5px 5px;
+    background-color: #003b46;
+    color: white;
+    border-radius: 10px;
+}
+.job-sec6-6-btn:hover{
+    color: #003b46;
+    background-color: white;
+    border-color: #003b46;
+    transform: scale(1.05);
+}
+
+
+.job-sec6-9{
+    width: 70%;
+    padding-top: 20px;
+   
+}
+
+.job-sec4-bg{
+   background-color: #f5f5f5;
+}
+.carousel .thumbs-wrapper{
+    margin: 0px !important;
+}
+.carousel.carousel-slider .control-arrow{
+    top:190px !important;
+    bottom: 190px !important;
+    font-size: 26px;
+    margin-top: 0;
+    padding: 5px;
+}
+@media screen and (width:1440px){
+    .job-sec1-5{
+        height: 123%;
+    }
+    .job-sec5-6{
+        left: 377px;
+          }
+          .job-sec5-7{
+              left: 92px;
+          }
+          .job-sec5-12{
+              right: 353px;
+          }
+          .job-sec5-13{
+              right: 92px;
+          }
+          .job-sec6-3{
+            width: 110%;
+          
+        } 
+        .carousel.carousel-slider .control-arrow{
+            top:160px !important;
+            bottom: 160px !important;
+            font-size: 26px;
+            margin-top: 0;
+            padding: 5px;
+        }
+}
+@media screen and ( width:1024px){
+    .job-sec1-5{
+        height: 110%;
+        width: 108%;
+    }
+    .job-sec1-1{
+        font-size: 29px;
+     }
+    
+    .job-sec4-img img{
+       margin-top: 30px;
+     }
+     .job-sec5-4{
+   left: 181px;
+     }
+     .job-sec5-5{
+         left: 217px;
+     }
+     .job-sec5-6{
+        left: 295px;
+        top: 406px;
+    }
+
+    .job-sec5-7{
+        left: 9px;
+        top: 381px;
+    }
+.job-sec5-8{
+    left: 111px;
+}
+.job-sec5-9{
+   left: 148px;
+}
+.job-sec5-10{
+  right: 117px;
+}
+.job-sec5-11{
+  right: 158px;
+}
+.job-sec5-12{
+    right: 330px;
+    bottom: 321px;
+}
+.job-sec5-13{
+    right: 70px;
+    top: 317px;
+}
+.carousel.carousel-slider .control-arrow{
+    top:140px !important;
+    bottom: 140px !important;
+    font-size: 26px;
+    margin-top: 0;
+    padding: 5px;
+}
+}
+@media screen and (max-width:768px){
+    .job-sec1-5 {
+        width: 50%;
+    }
+    .job-sec1-6{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;      
+    }
+    .job-hide{
+        display: none;
+    }
+    .job-sec5{
+        padding-top: 100px;
+        padding-bottom: 100px;
+       
+    }
+    .job-sec5-1{
+        font-size:30px;
+    }
+    .job-sec6-3 {
+        width: 60%;
+    }
+    .job-sec6-9{
+        width: 40px;
+    }
+    .carousel.carousel-slider .control-arrow{
+        top:290px !important;
+        bottom: 290px !important;
+        font-size: 26px;
+        margin-top: 0;
+        padding: 5px;
+    }
+}
+@media screen and (max-width:425px){
+    .carousel.carousel-slider .control-arrow{
+        top:240px !important;
+        bottom: 240px !important;
+        font-size: 26px;
+        margin-top: 0;
+        padding: 5px;
+    }
+}
+@media screen and (width:1804px){
+    .job-sec1-6{
+        width: 35%;
+    }
+}

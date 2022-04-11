@@ -1,0 +1,124 @@
+.about-section1-left {
+    position: relative;
+}
+
+.img-grow {
+    width: 20%;
+}
+
+.about-list li {
+    list-style-type: disc;
+    text-align: center;
+}
+
+.img-one {
+    width: 10%;
+}
+
+.form-check-input:checked {
+    background-color: #003b46;
+    border-color: #003b46;
+}
+.form-
+
+.about-img {
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: rgba(6, 73, 82, 0.17) 0px -23px 25px 0px inset, rgba(6, 52, 63, 0.15) 0px -36px 30px 0px inset, rgba(5, 71, 71, 0.1) 0px -79px 40px 0px inset, rgba(4, 72, 75, 0.06) 0px 2px 1px, rgba(6, 54, 50, 0.09) 0px 4px 2px, rgba(12, 68, 68, 0.09) 0px 8px 4px, rgba(8, 60, 66, 0.09) 0px 16px 8px, rgba(11, 61, 65, 0.09) 0px 32px 16px;
+}
+.about-img:hover{
+    transform: scale(0.9);
+    transition: 1s;
+}
+.about-section3
+{
+    background-color: #003b46;
+    margin-top: 20px;
+    padding-bottom: 100px;
+}
+.about-section3-box {
+    border-radius: 0px 0px 0px 0px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+    
+.img1 {
+    width: 70%;
+}
+
+
+.about-section2-icon {
+    color: #003b46;
+}
+
+.about-section2-subheading {
+    font-size: 22px;
+}
+
+.about-section4 {
+   
+    width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+    .about-img {
+        width: 97%;
+    }
+    .img1 {
+        width: 93%;
+    }
+    .about-section3-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-img {
+        width: 93%;
+    }
+    .img1 {
+        width: 122%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-section3-box {
+        width: 100%;
+    }
+    .about-img {
+        width: 40%;
+    }
+    .img1 {
+        width: 78%;
+    }
+    .about-section3-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-section3-box {
+        width: 100%;
+    }
+    .img1 {
+        width: 132%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .about-section3-box {
+        width: 100%;
+    }
+    .img1 {
+        width: 140%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about-section3-box {
+        width: 100%;
+    }
+    .img1 {
+        width: 155%;
+    }
+}

@@ -1,0 +1,120 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: dancing Script;
+    src: url("../font/DancingScript-VariableFont_wght.ttf");
+}
+
+.signup-part1 {
+    border-bottom: 2px solid #003b46;
+    border-radius: 0px 600px 600px 0px;
+    background-color: #f2f7f8;
+    text-align: center;
+    padding-left: 180px;
+    border-left: none;
+
+}
+
+.signup-part2 {
+    border-top: 2px solid #003b46;
+    border-radius: 600px 0px 0px 600px;
+    background-color: #f2f7f8;
+    text-align: center;
+    padding-right: 180px;
+    border-right: none;
+}
+
+.demo {
+    font-family: 'Dancing Script', cursive;
+    width: 200px;
+    height: 120px;
+    background-color: #003b46;
+    position: relative;
+    top: 325px;
+    left: 650px;
+    z-index: 1;
+}
+
+h1 {
+    color: #003b46;
+}
+
+.demo {
+    text-align: center;
+}
+
+.signup-img1 {
+    width: 50%;
+}
+
+.signup-img2 {
+    width: 55%;
+}
+
+.btn-signup {
+    background-color: #003b46;
+    color: white;
+    padding: 10px 50px;
+}
+
+.btn-signup:hover {
+    background-color: white;
+    color: #003b46;
+    border-color: #003b46;
+    transform: scale(1.05);
+}
+
+@media screen and (width: 1024px) {
+    .signup-img1 {
+        padding-top: 42px;
+    }
+}
+
+.button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #003b46 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button-30:focus {
+    box-shadow: #003b46 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #003b46 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #003b46 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-30:active {
+    box-shadow: #003b46 0 3px 7px inset;
+    transform: translateY(2px);
+}
